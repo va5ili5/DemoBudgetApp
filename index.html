@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <article>
+        <header class="header">
+            <div class="header-grid">
+                <h1>Available budget in Month</h1>
+                <h3 class="totalBudget"></h3>
+                <div>
+                    <h3>INCOME</h3>
+                </div>
+                <div class="incomeAmount"></div>
+                <div>
+                    <h3>EXPENCES</h3>
+                </div>
+                <div class="expenceAmount"></div>
+                <div class="expencePercentage"></div>
+            </div>
+        </header>
+        <main>
+            <div class="input-container">
+                <div class="input-grid">
+                    <select id="type" class="input-element">
+                        <option value="inc">+</option>
+                        <option value="exp">-</option>
+                    </select>
+                    <input type="text" id="description" placeholder="description" class="input-element">
+                    <input type="text" id="amount" placeholder="amount" class="input-element">
+                    <button type="button" id="addBtn" class="input-element"></button>
+                </div>
+            </div>
+            <div class="list-container">
+                <div class="expences">
+                    <h4>EXPENCES</h4>
+                    <div class="expensesList">
+                    </div>
+                </div>
+                <div class="income">
+                    <h4>INCOME</h4>
+                    <div class="incomeList">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            Budget App &copy; 2018
+        </footer>
+    </article>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
